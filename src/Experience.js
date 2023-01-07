@@ -53,11 +53,11 @@ export default function Experience()
             </mesh>
 
             <Sparkles
-		        size={ 6 }
-                scale={ [ 4, 2, 4 ] }
+		        size={ 10 }
+                scale={ [ 100, 100, 100 ] }
                 position-y={ 1 }
                 speed={ 0.2 }
-                count={ 40 }
+                count={ 10000 }
             />
         </Center>
 

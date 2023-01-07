@@ -1,8 +1,10 @@
-
+import './style.css'
+import * as THREE from 'three'
+import * as dat from 'lil-gui'
 import { useMatcapTexture, Text3D, Text, Html, ContactShadows, PresentationControls, Float, Environment, useGLTF, OrbitControls } from '@react-three/drei'
 
 export default function Computer()
-{
+{ 
     const computer = useGLTF('./model/computer.gltf')
     const [ matcapTexture ]= useMatcapTexture('7B5254_E9DCC7_B19986_C8AC91', 256)
     const tempArray = [] 
@@ -88,9 +90,9 @@ export default function Computer()
             { [...Array(100)].map(() =>  
             <mesh
                 position={ [
-                    (Math.random() - 0.5) * 10,
-                    (Math.random() - 0.5) * 10,
-                    (Math.random() - 0.5) * 10
+                    (Math.random() - 0.5) * 20,
+                    (Math.random() - 0.5) * 50,
+                    (Math.random() - 0.5) * 20
                 ] }
                 scale={ 0.2 + Math.random() * 0.2 }
                 rotation={ [
@@ -99,7 +101,7 @@ export default function Computer()
                     0
                 ] }
             >
-                <torusGeometry args={ [0.2 , 0.2, 8, 20]} />
+                <torusGeometry args={ [0.2 , 0.2, 20, 20]} />
                 <meshMatcapMaterial matcap={ matcapTexture } />
             </mesh>
             ) }  
