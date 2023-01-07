@@ -29,6 +29,7 @@ export default function Experience()
     useFrame((state, delta) =>
     {
         portalMaterial.current.uTime += delta
+        
     })
 
     return <>

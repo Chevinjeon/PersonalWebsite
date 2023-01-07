@@ -94,7 +94,7 @@ export default function Computer()
                     (Math.random() - 0.5) * 50,
                     (Math.random() - 0.5) * 20
                 ] }
-                scale={ 0.2 + Math.random() * 0.2 }
+                scale={ 0.5 + Math.random() * 0.5 }
                 rotation={ [
                     Math.random() * Math.PI,
                     Math.random() * Math.PI,
