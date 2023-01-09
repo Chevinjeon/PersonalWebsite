@@ -83,7 +83,7 @@ export default function Computer()
                     position={ [ -6.4, -1, 5 ] }
                     
                 >
-                    WELCOME  TO  CHEVIN'S  WEBSITE.
+                    WELCOME  TO  CHEVIN'S  WEBSITE
                     <meshMatcapMaterial matcap={ matcapTexture } />
                 </Text3D>
 

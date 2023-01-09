@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client'
 import { Canvas } from '@react-three/fiber'
 import Experience from './Experience.js'
 import Computer from './Computer.js'
+import Room from './Room.js'
 
 const root = ReactDOM.createRoot(document.querySelector('#root'))
 
@@ -19,8 +20,7 @@ root.render(
         <color args={ [ '#201919' ] } attach="background" />
         <Experience />
         <Computer />
-        
-        
+        <Room />
 
     </Canvas>
 )
